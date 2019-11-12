@@ -45,7 +45,6 @@ def luhnify(number):
         else:
             product = "1" + str( x - 1)
             return int(int(product) / 2)
-        #x = x + (x%3)
     return x
 
 # Main method.   
@@ -57,7 +56,6 @@ if __name__ == "__main__":
         exit()
     result = []
     numbers = getNumbers(path)
-    print(numbers)
     for number in numbers:
         result.append(str(luhnify(number)))
     print(''.join(result))
